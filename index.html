@@ -1,50 +1,355 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hochzeit</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!-- Inclusion of styles and fonts after CSS-->
     <link rel="stylesheet" href="style.css">
-    <link href="//db.onlinewebfonts.com/c/6bccacc0af0302222227e090e8a03f3f?family=Scriptina" rel="stylesheet"
+    <link href="https://db.onlinewebfonts.com/c/6bccacc0af0302222227e090e8a03f3f?family=Scriptina" rel="stylesheet"
         type="text/css" />
-    <script src="timer.js"></script>
-    <title>Document</title>
 </head>
 
 <body>
-
-
     <header>
-        <table id="headertable">
-            <tr>
-                <td id=languages>
-                    <div>
-                        <a href=en/index.html>english</a>
-                    </div>
-                </td>
-                <td id="count">
-                    <p id="countdown"></p>
-                </td>
-            </tr>
-        </table>
+        <p id="countdown"></p>
     </header>
     <nav>
-        <hr>
-        <br>
-        <a href="./index.html">Home</a>
-        <a href="./corona.html">Corona</a>
-        <a href="./directions.html">Directions</a>
-        <a href="./accomodation.html">Accomodation</a>
-        <br>
-        <br>
-        <hr>
-    </nav>
-    <main>
-        <p>test schrift deutsch</p>
-        <img src="images/background_schrift_2.JPG" alt="frontphoto">
-    </main>
+        <div class="nav-container">
+            <div class="nav-box-outer"><a href=index.html>Home</a></div>
+            <div class="nav-box-center">
+                <button type="button" class="btn-nav" data-toggle="modal" data-target="#tag_modal">Der
+                    Hochzeitstag</button>
+                <button type="button" class="btn-nav" data-toggle="modal" data-target="#anreise_modal">Anreise</button>
+                <button type="button" class="btn-nav" data-toggle="modal"
+                    data-target="#unterkunft_modal">Unterkünfte</button>
+                <button type="button" class="btn-nav" data-toggle="modal" data-target="#muenster_modal">Münster</button>
+                <button type="button" class="btn-nav" data-toggle="modal" data-target="#faq_modal">Fragen und
+                    Antworten</button>
+            </div>
+            <div class="nav-box-outer"><a href=en/index.html>English</a></div>
 
+        </div>
+    </nav>
+
+    <main>
+        <img src="images/Background_schrift - onTop.jpg" alt="frontphoto">
+
+        <div class="welcome-text">
+            <h2> Ihr Lieben
+            </h2>
+            <span>
+                <br>
+                die Adresse sagt schon alles. Wir freuen uns sehr gemeinsam mit euch allem eine
+                wunderschöne
+                Sommerhochzeit feiern zu können.<br>
+                <br>
+                Auf dieser Seite findet ihr hoffentlich alles, was für euch vorab hilfreich ist. Bitte seid so nett und
+                teilt unsüber die Seite „RSVP“bis spätestens 01.07.2021 mit, ob ihr diesen Tag mit uns verbringen könnt.
+                <br>
+                <br>
+                Bei Fragensind wir für euch gerne erreichbar: wir@wirmiteuchimjuli.deUnsere Trauzeugen erreicht ihr
+                unter:
+                MaikeSilas@wirmiteuchimjuli.de<br>
+                <br>
+                Wir informieren euch per E-Mail, wenn wir aufgrund der Rahmenumstände Veränderungen an der Planung
+                vornehmen
+                müssen.<br>
+                <br>
+                Wir freuen uns sehr auf einen unvergesslichen Tag mit euch. Sabine und Max <br>
+                <br>
+                (händische Unterschriften)</span>
+        </div>
+
+
+
+
+        <!-- ======================== Andere Seiten als Modals ============================ -->
+
+        <!-- ======================== Der Tag ============================ -->
+
+        <div class="modal fade" id="tag_modal" tabindex="-1" role="dialog" aria-labelledby="tag_modal">
+            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Der Hochzeitstag</h5>
+                    </div>
+                    <div class="modal-body">
+                        <table id="timetable">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        12:00 Uhr
+                                    </td>
+                                    <td>
+                                        Standesamtliche Trauung
+                                        <p>Lotharinger Kloster
+                                            Klemensstraße 10
+                                            48143 Münster
+                                        </p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Nachmittag
+                                    </td>
+                                    <td>
+                                        <p>Zeit zur Entspannung oder Stadterkundung Wir haben tolle Freunde, die euch
+                                            gerne eine Stadtführung auf Deutsch oder Englisch geben und euch bei einem
+                                            leckeren Kaffee oder Kaltgetränke unsere liebsten Plätze der Stadt zeigen.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Ab 17:30 Uhr
+                                    </td>
+                                    <td>
+                                        Hochzeitsessen und - Feier
+                                        <p>Escape Münster
+                                            Hafenweg 46
+                                            48155 Münster
+
+                                            Wir freuen uns, euch in festlicher Sommerkleidung begrüßten zu dürfen
+
+                                            Eine Abkühlung im Hafenbecken ist möglich, also sorgt vor!
+                                        </p>
+
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="modal_close" data-dismiss="modal">Schließen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    </div>
+
+    <!-- ======================== Anreise ============================ -->
+
+    <div class="modal fade" id="anreise_modal" tabindex="-1" role="dialog" aria-labelledby="anreise_modal">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Anreise</h5>
+                </div>
+                <div class="modal-body">
+                    <h2>Nach Münster</h2>
+                    <hr>
+                    <h3>Anreise per Flugzeug</h3>
+                    <p>
+                        Münster-Osnabrück (FMO), dann weiter per Bus oder Taxi Düsseldorf
+                        (DUS), dann weiter per DirektzugAmsterdam-Schiphol (AMS), dann weiter per Zug über Enschede</p>
+                    <h3>Anreise per Zug </h3>
+                    Münster ist über den zentral in der Stadt gelegenen Hauptbahnhof gut an alle größeren
+                    deutschen Städte angebunden. Die Hochzeitsfeier ist fußläufig in 15 Minuten vom Hauptbahnhof zu
+                    erreichen.Es gibt Hotels und Unterkünfte in nächster Nähe.
+                    <h2>Am Hochzeitstag </h2>
+                    <hr>
+                    <h3>Standesamtliche Trauung</h3>
+                    Lotharinger Kloster
+                    Klemensstraße 10
+                    48143 Münster
+                    <br>
+                    Da es direkt am Kloster nur wenige Parkmöglichkeiten gibt, nutzt bitte die Parkplätze in der näheren
+                    Umgebung, zum Beispiel am Hörsterplatz (Korduanenstraße 9) oder die Parkhäuser Theater (Tibusstraße
+                    2) und Alter Steinweg (Alter Steinweg 21).
+                    <h3>Hochzeitsfeier</h3>
+                    Escape Münster
+                    Hafenweg 46
+                    48155 Münster
+                    Parkplätze stehen ausreichend zur Verfügung
+                    <h2>In der Stadt</h2>
+                    <hr>
+                    <h3>Per Pedes</h3>
+                    In Münster sind die meisten Örtlichkeiten fußläufig zu erreichen. Das ESCAPE ist fußläufig 30
+                    Minuten vom Standesamt Lotharinger Kloster und dem Stadtzentrum entfernt.
+                    <h3>Per Mietrad</h3>
+                    Am Hauptbahnhof könnt ihr euch <a href="https://www.radstation.de/mieten">tagesweise Fahrräder
+                        leihen</a>.
+                    <h3>Per E-Scooter</h3>
+                    Überall in der Stadt werdet ihr elektrische Scooter
+                    finden, die ihr gegen eine Gebühr per Smartphone freischalten könnt. Die beiden größten Anbieter
+                    sind <a href="https://www.tier.app/de">Tier</a> und <a
+                        href="https://www.li.me/de/startseite">Lime</a>
+                    <h3>Per Taxi</h3>
+                    Die 24/7 Hotline lautet: 0251-6011.
+                    Taxen sind meist innerhalb von 10 Minuten bei euch
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modal_close" data-dismiss="modal">Schließen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    </div>
+
+    <!-- ======================== Corona ============================ -->
+
+    <div class="modal fade" id="unterkunft_modal" tabindex="-1" role="dialog" aria-labelledby="unterkunft_modal">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Unterkunft</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                        of them accusamus labore sustainable VHS.</p>
+                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                        of them accusamus labore sustainable VHS.</p>
+                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                        of them accusamus labore sustainable VHS.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modal_close" data-dismiss="modal">Schließen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="muenster_modal" tabindex="-1" role="dialog" aria-labelledby="muenster_modal">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Münster</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                        of them accusamus labore sustainable VHS.</p>
+                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                        of them accusamus labore sustainable VHS.</p>
+                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                        of them accusamus labore sustainable VHS.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modal_close" data-dismiss="modal">Schließen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="faq_modal" tabindex="-1" role="dialog" aria-labelledby="faq_modal">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">FAQ</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                        of them accusamus labore sustainable VHS.</p>
+                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                        of them accusamus labore sustainable VHS.</p>
+                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                        of them accusamus labore sustainable VHS.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modal_close" data-dismiss="modal">Schließen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    </div>
+    <!-- scripts -->
+    <script src="timer.js"></script>
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+    <script>
+        try {
+            fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function (response) {
+                return true;
+            }).catch(function (e) {
+                var carbonScript = document.createElement("script");
+                carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+                carbonScript.id = "_carbonads_js";
+                document.getElementById("carbon-block").appendChild(carbonScript);
+            });
+        } catch (error) {
+            console.log(error);
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</body>
 </body>
 
 </html>
