@@ -9,22 +9,33 @@
     background: transparent; */
 }
 
+h1{
+    font-weight: 300;
+    letter-spacing: 5px;
+}
 h2 {
     font-size: 1.5em;
-    margin: 1em 1em 0em 0em;
+    margin: 1.5em 1em 1em 0em;
+    letter-spacing: 2px;
+    font-weight: 300;
 }
 h3 {
-    font-size: 1em;
-    margin: 1em 1em 0em 0em;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    margin: 1em 0em 1em 0em;
+    font-weight: 300;
+}
+
+a {
+    color: black;
 }
 
 header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content:center;
     height: 100px;
     margin-top:0;
-    font-family:Arial Narrow, Arial, sans-serif;
     background-image: url(images/header_background_x.jpg);
     background-size:cover;
     background-repeat: no-repeat;
@@ -34,64 +45,55 @@ header p{
     align-self: center;
 }
 
+.nav-base{
+    display:flex;
+    flex:1;
+    border-top: 0.5px solid black;
+    font-size: 14px;
+}
+
 .nav-container {
     display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-.nav-box-outer{
-    display:flex;
-    flex: 1;
-    justify-content:center;
-}
-.nav-box-inner{
-    display:flex;
-    flex: 2;
-    justify-content:center;
-}
 
-nav {
-    border-top: 0.5px solid black;
-}
-
-.btn-nav{
+ nav .btn-nav{
     text-align:center;
     border: none;
     background:none;
     display: inline;
-    font-family:Arial Narrow, Arial, sans-serif;
     color:Black;
     padding: 1em 1em 0;
     letter-spacing:2px;
-    transition: 1s;
+    transition: 0.6s;
     text-decoration: none;
     border-bottom: 1px solid transparent;
 }
-nav .btn-nav:hover{
-    border-color: black;
-}
 
-
-nav a{
-    text-align:center;
+#language {
+    border: none;
+    background:none;
+    padding: 1em 1em 0;
     display: inline;
-    font-family:Arial Narrow, Arial, sans-serif;
+}
+
+#language > a{
     color:Black;
-    padding-top: 1em;
     letter-spacing:2px;
-    transition: 1s;
+    transition: 0.6s;
     text-decoration: none;
     border-bottom: 1px solid transparent;
 }
 
-.nav-box:last-child > a {
-    margin-left:auto;
-    margin-right:auto;
+.content-text {
+    font-size:1em;
+    letter-spacing: 0.7px;
 }
 
-
-nav a:hover{
+nav .btn-nav:hover, #language > a:hover{
     border-color: black;
-    color: black;
 }
 
 main, img {
@@ -105,8 +107,9 @@ main, img {
     width: 85%;
     margin: auto;
     margin-bottom: 10%;
-
 }
+
+
 
 .modal-header{
     justify-content: center;
@@ -123,30 +126,73 @@ main, img {
     font-family:Arial, Helvetica, sans-serif;
 }
 .modal-body{
-    margin:0 0 1em 1em;
+    margin:0 5em 1em 5em;
 }
 
-#timetable {
-    margin: auto;
-    white-space: pre-line;
+
+.form-section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-group input{
+    width: 100%;
+    padding: 5px;
+    font-size: 18px
+    border: 1px solid rgba(128,128,128,0.199)
+    margin-top: 5px;
+}
+
+button[type="submit"]{
+    width:100%;
+    border:none;
+    outline:none;
+    padding: 20px;
+    font-size:24;
+    border-radius: 8px;
+    text-aign: center;
+    cursor: pointer;
+    margin-top: 10px
 }
 
 #timetable td{
-    padding: 1em 1em 1em 1em;
+    padding: 1em 1em;
     vertical-align: top;
-    font-weight: 500;
 }
 #timetable td > p{
        font-weight: 300;
 }
 
-
+#acc-list > li{
+    margin: 0 0 2em 0;
+}
 
 #countdown{
     letter-spacing:2px;
+    font-size: 0.7em;
 }
 
-/* #language{
-    text-align:right;
-    width:10%;
-} */
+
+
+
+@media (max-width: 990px) {  
+    .btn-nav {  
+      flex-basis: 100%;  
+    }  
+  }

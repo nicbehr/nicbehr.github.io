@@ -24,23 +24,55 @@
     <header>
         <p id="countdown"></p>
     </header>
-    <nav>
-        <div class="nav-container">
-            <div class="nav-box-outer"><a href=index.html>Home</a></div>
-            <div class="nav-box-center">
-                <button type="button" class="btn-nav" data-toggle="modal" data-target="#tag_modal">Der
-                    Hochzeitstag</button>
-                <button type="button" class="btn-nav" data-toggle="modal" data-target="#anreise_modal">Anreise</button>
-                <button type="button" class="btn-nav" data-toggle="modal"
-                    data-target="#unterkunft_modal">Unterkünfte</button>
-                <button type="button" class="btn-nav" data-toggle="modal" data-target="#muenster_modal">Münster</button>
-                <button type="button" class="btn-nav" data-toggle="modal" data-target="#faq_modal">Fragen und
-                    Antworten</button>
-            </div>
-            <div class="nav-box-outer"><a href=en/index.html>English</a></div>
 
+    <div class="nav-base">
+        <div class="col-11">
+            <nav class=" navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="nav-container collapse navbar-collapse col-11" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <button type="button" class="btn-nav nav-item" data-toggle="modal"
+                                data-target="#tag_modal">Der
+                                Hochzeitstag</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn-nav nav-item" data-toggle="modal"
+                                data-target="#anreise_modal">Anreise</button>
+                        </li>
+                        <li><button type="button" class="btn-nav nav-item" data-toggle="modal"
+                                data-target="#unterkunft_modal">Unterkünfte</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn-nav nav-item" data-toggle="modal"
+                                data-target="#muenster_modal">Münster</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn-nav nav-item" data-toggle="modal"
+                                data-target="#faq_modal">Fragen
+                                und Antworten</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn-nav nav-item" data-toggle="modal"
+                                data-target="#rsve_modal">RSVE</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-    </nav>
+        <div class="col-1" id="language">
+            <a href=index.html>English</a>
+        </div>
+    </div>
+
+
+
+
 
     <main>
         <img src="images/Background_schrift - onTop.jpg" alt="frontphoto">
@@ -50,15 +82,16 @@
             </h2>
             <span>
                 <br>
-                die Adresse sagt schon alles. Wir freuen uns sehr gemeinsam mit euch allem eine
-                wunderschöne
-                Sommerhochzeit feiern zu können.<br>
+                die Adresse sagt schon alles. Wir freuen uns sehr gemeinsam mit euch allen eine
+                wunderschöne Sommerhochzeit feiern zu können.<br>
                 <br>
-                Auf dieser Seite findet ihr hoffentlich alles, was für euch vorab hilfreich ist. Bitte seid so nett und
-                teilt unsüber die Seite „RSVP“bis spätestens 01.07.2021 mit, ob ihr diesen Tag mit uns verbringen könnt.
+                Auf dieser Seite findet ihr hoffentlich alles, was für euch vorab hilfreich ist. Bitte seid so nett
+                und
+                teilt unsüber die Seite „RSVP“ bis spätestens 01.07.2021 mit, ob ihr diesen Tag mit uns verbringen
+                könnt.
                 <br>
                 <br>
-                Bei Fragensind wir für euch gerne erreichbar: wir@wirmiteuchimjuli.deUnsere Trauzeugen erreicht ihr
+                Bei Fragen sind wir für euch gerne erreichbar: wir@wirmiteuchimjuli.deUnsere Trauzeugen erreicht ihr
                 unter:
                 MaikeSilas@wirmiteuchimjuli.de<br>
                 <br>
@@ -82,48 +115,50 @@
             <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Der Hochzeitstag</h5>
+                        <h1>Der Hochzeitstag</h1>
                     </div>
                     <div class="modal-body">
                         <table id="timetable">
                             <tbody>
                                 <tr>
                                     <td>
-                                        12:00 Uhr
+                                        <h3>12:00</h3>
                                     </td>
                                     <td>
-                                        Standesamtliche Trauung
-                                        <p>Lotharinger Kloster
-                                            Klemensstraße 10
-                                            48143 Münster
+                                        <h3> Standesamtliche Trauung</h3>
+                                        <p>Lotharinger Kloster <br>
+                                            Klemensstraße 10 <br>
+                                            48143 Münster <br>
                                         </p>
 
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        Nachmittag
+                                        <h3>Nachmittag</h3>
                                     </td>
                                     <td>
-                                        <p>Zeit zur Entspannung oder Stadterkundung Wir haben tolle Freunde, die euch
-                                            gerne eine Stadtführung auf Deutsch oder Englisch geben und euch bei einem
-                                            leckeren Kaffee oder Kaltgetränke unsere liebsten Plätze der Stadt zeigen.
+                                        <h3>Zeit zur Entspannung oder Stadterkundung</h3>
+                                        <p>Wir haben tolle Freunde, die euch
+                                            gerne eine Stadtführung auf Deutsch oder Englisch geben und euch bei
+                                            einem leckeren Kaffee oder Kaltgetränke unsere liebsten Plätze der Stadt
+                                            zeigen.
                                         </p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        Ab 17:30 Uhr
+                                        <h3>Ab 17:30</h3>
                                     </td>
                                     <td>
-                                        Hochzeitsessen und - Feier
-                                        <p>Escape Münster
-                                            Hafenweg 46
-                                            48155 Münster
-
-                                            Wir freuen uns, euch in festlicher Sommerkleidung begrüßten zu dürfen
-
-                                            Eine Abkühlung im Hafenbecken ist möglich, also sorgt vor!
+                                        <h3>Hochzeitsessen und - Feier</h3>
+                                        <p>Escape Münster <br>
+                                            Hafenweg 46 <br>
+                                            48155 Münster <br>
+                                            <br>
+                                            Wir freuen uns, euch in festlicher Sommerkleidung
+                                            begrüßten zu dürfen. Eine Abkühlung im Hafenbecken ist möglich, also sorgt
+                                            vor!
                                         </p>
 
 
@@ -147,7 +182,7 @@
         <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Anreise</h5>
+                    <h1>Anreise</h1>
                 </div>
                 <div class="modal-body">
                     <h2>Nach Münster</h2>
@@ -201,37 +236,40 @@
     </main>
     </div>
 
-    <!-- ======================== Corona ============================ -->
+    <!-- ======================== Unterkünfte ============================ -->
 
     <div class="modal fade" id="unterkunft_modal" tabindex="-1" role="dialog" aria-labelledby="unterkunft_modal">
         <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Unterkunft</h5>
+                    <h1>Unterkünfte</h1>
                 </div>
                 <div class="modal-body">
-                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
-                        of them accusamus labore sustainable VHS.</p>
-                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
-                        of them accusamus labore sustainable VHS.</p>
-                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
-                        of them accusamus labore sustainable VHS.</p>
+                    <div class="article">
+                        <p>Wir haben für euch einige Unterkünfte in der Nähe der Hochzeitsfeier herausgesucht</p>
+                        <ul id="acc-list">
+                            <li>Modernes Hostel am Hafen <br>
+                                <a href="https://www.hotel-bb.com/de/hotel/muenster-hafen">B&B Hotel</a>
+                            </li>
+                            <li>Günstig und Nähe Bahnhof <br>
+                                <a href="https://all.accor.com/hotel/2206/index.de.shtml">IBIS Hotel</a>
+                            </li>
+                            <li>Mitten im Stadtzentrum <br>
+                                <a href="https://www.h-hotels.com/de/h4/hotels/h4-hotel-muenster">H4 Hotel</a>
+                            </li>
+                            <li>Edel und modern – hier hat schon der König
+                                von Jordanien übernachtet <br>
+                                <a href="https://www.mauritzhof.de/de/">Mauritzhof</a>
+                            </li>
+                            <li>Weitere Alternativen findet ihr <br>
+                                <a
+                                    href="https://www.tripadvisor.de/Hotels-g187382-Muenster_North_Rhine_Westphalia-Hotels.html">auf
+                                    Tripadvisor</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+
                 <div class="modal-footer">
                     <button type="button" class="modal_close" data-dismiss="modal">Schließen</button>
                 </div>
@@ -242,30 +280,324 @@
         <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Münster</h5>
+                    <h1>Münster</h1>
                 </div>
                 <div class="modal-body">
-                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
-                        of them accusamus labore sustainable VHS.</p>
-                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
-                        of them accusamus labore sustainable VHS.</p>
-                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
-                        of them accusamus labore sustainable VHS.</p>
+                    <div class="article">
+                        <section>
+                            <p class="content-text">Münster ist vielleicht am bekanntesten als Stadt des Westfälischen
+                                Friedens,
+                                in der
+                                am 24. Oktober 1848 der dreißigjährige Krieg beende wurde. Mehr als 350 Jahre später
+                                hat Münster aber noch einiges mehr zu bieten. <br>
+                                Bars, Museen und viele kleine und große wunderschöne Orte in Münster warten auf
+                                euch. Und dann gibt es da noch mehr als 100 kleine und größere Schlösser im Umland.
+                            </p>
+                        </section>
+                        <section class="container-fluid px-0">
+                            <div class="row align-items-center content">
+                                <div class="col-md-6 order-2">
+                                    <h2 style="text-align: center;">In der Innenstadt</h2>
+                                </div>
+                                <div class="col-md-6 order-2">
+                                    <h2 style="text-align: center;">
+                                        <p></p>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="row align-items-center content">
+                                <div class="col-md-6 order-2">
+                                    <img src="images/coffee.jpg" alt="coffee" class="img-fluid">
+                                </div>
+                                <div class="col-md-6 text-center order-1">
+                                    <div class="row justify-content-center">
+                                        <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                                            <h3>Röstbar</h3>
+                                            <p class="content-text">Pause in einer der vier <a
+                                                    href="https://röstbar.com">Röstbars</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center content">
+                                <div class="col-md-6 text-center">
+                                    <div class="row justify-content-center">
+                                        <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                                            <h3>Das Fyal</h3>
+                                            <p class="content-text">Ein Bier im Fyal Central am Domplatz (Geisbergweg 8,
+                                                48143) oder ein Gin Tonic in der Pension Schmidt (Alter Steinweg
+                                                37/38, 48143)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="images/Fyal-6.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="row align-items-center content">
+                                <div class="col-md-6 order-2 ">
+                                    <img src="images/Raphaels.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-md-6 text-center order-1 ">
+                                    <div class="row justify-content-center">
+                                        <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                                            <h3>Raphaels</h3>
+                                            <p class="content-text">Waffeln oder Eis von der Eismanufaktur Raphaels
+                                                (Bült 1, 48143 und Hansaring 36, 48155)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center content">
+                                <div class="col-md-6 order-2 ">
+                                    <img src="images/cavete.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-md-6 text-center order-1 ">
+                                    <div class="row justify-content-center">
+                                        <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                                            <h3>Die Cavete</h3>
+                                            <p class="content-text">Für Paul und Etienne die urige Studentenkneipe
+                                                Cavete, ihr wisst warum (Kreuzstr. 37, 48143)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center content">
+                                <div class="col-md-6 order-2 ">
+                                    <img src="images/leve.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-md-6 text-center order-1 ">
+                                    <div class="row justify-content-center">
+                                        <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                                            <h3>Altes Gasthaus Leve</h3>
+                                            <p class="content-text">Traditionell westfälisches Essen im Gasthaus Alte
+                                                Leve (Alter Steinweg 37, 48143)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="container-fluid px-0">
+                            <div class="row align-items-center content">
+                                <div class="col-md-6">
+                                    <h2 style="text-align: center;">
+                                        <p></p>
+                                    </h2>
+                                </div>
+                                <div class="col-md-6">
+                                    <h2 style="text-align:center">In unserem Viertel</h2>
+                                </div>
+                            </div>
+                            <div class="row align-items-center content">
+                                <div class="col-md-6">
+                                    <img src="images/Escape 1.jpg" alt="coffee" class="d-none d-lg-inline">
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <div class="row justify-content-center">
+                                        <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                                            <h3>Der Hafen</h3>
+                                            <p class="content-text">Ein kurzer Stopp am Hafenkiosk (Hansaring 39, 48155
+                                                Münster) und ein Spaziergang am Hafen</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center content">
+                                <div class="col-md-6">
+                                    <img src="images/kulti.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <div class="row justify-content-center">
+                                        <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                                            <h3>Rustikales kulinarisches</h3>
+                                            <p class="content-text">Der wohl beste Döner diesseits des Atlantik bei
+                                                Kulti
+                                                Kebab (Wolbecker Str. 16a, 48155) und direkt nebenan die tolle
+                                                vegetarische Variante bei Gustav Grün (Wolbecker Str. 20, 48155)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="row align-items-center content">
+                                <div class="col-md-6 order-2">
+                                    <h2 style="text-align: center;">Im Grünen</h2>
+                                </div>
+                                <div class="col-md-6 order-2">
+                                    <h2 style="text-align: center;">
+                                        <p></p>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="row align-items-center content">
+                                <div class="col-md-6 order-2 ">
+                                    <img src="images/Aasee.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-md-6 text-center order-1 ">
+                                    <div class="row justify-content-center">
+                                        <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                                            <h3>Der Aasee</h3>
+                                            <p class="content-text">Spaziergang oder ein gemütlicher Nachmittag in der
+                                                Sonne am
+                                                Aasee –
+                                                auch eine tolle Laufrunde
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center content">
+                                <div class="col-md-6 order-2 ">
+                                    <img src="images/Rieselfelder.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-md-6 text-center order-1 ">
+                                    <div class="row justify-content-center">
+                                        <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                                            <h3>Die Rieselfelder</h3>
+                                            <p class="content-text">Radtour durch die Rieselfelder zum Aussichtsturm und
+                                                ein
+                                                Radler am
+                                                „Heidekrug“ (Coermühle 100, 48157 Münster)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="container-fluid px-0">
+                            <div class="row align-items-center content">
+                                <div class="col-md-6">
+                                    <h2 style="text-align: center;">
+                                        <p></p>
+                                    </h2>
+                                </div>
+                                <div class="col-md-6">
+                                    <h2 style="text-align:center">Sehenswürdigkeiten</h2>
+                                    <p class="content-text">Mit der <a
+                                            href="https://www.muenstercard.de">Münstercard</a> könnt
+                                        ihr viele
+                                        Sehenswürdigkeiten gratis besuchen</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center content">
+                                <div class="col-md-6">
+                                    <img src="images/rathaus_muenster_13_muensterview.jpg" alt="rathaus"
+                                        class="d-none d-lg-inline">
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <div class="row justify-content-center">
+                                        <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                                            <p class="content-text">Rathaus des Westfälischen Friedens und der
+                                                Friedenssaal</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center content">
+                                <div class="col-md-6">
+                                    <img src="images/Dom.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <div class="row justify-content-center">
+                                        <p class="content-text">Paulus Dom Münster mit Schatzkammer </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center content">
+                                <div class="col-md-6">
+                                    <img src="images/muenster-schloss-3.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <div class="row justify-content-center">
+                                        <p class="content-text">Schloss Münster</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center content">
+                                <div class="col-md-6">
+                                    <img src="images/Botanischer Garten.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <div class="row justify-content-center">
+                                        <p class="content-text">Botanischer Garten am Schloss</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center content">
+                                <div class="col-md-6">
+                                    <img src="images/picasso_Museum-Rueckseite.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <div class="row justify-content-center">
+                                        <p class="content-text">Picasso Museum</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center content">
+                                <div class="col-md-6">
+                                    <img src="images/lwl.jpg" alt="lwl" class="img-fluid">
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <div class="row justify-content-center">
+                                        <p class="content-text"> <a href="https://www.lwl-museum-kunst-kultur.de/de/">
+                                                LWL
+                                                Museum für Kunst und Kultur</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="modal_close" data-dismiss="modal">Schließen</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="modal fade" id="faq_modal" tabindex="-1" role="dialog" aria-labelledby="faq_modal">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>FAQ</h1>
+                </div>
+                <div class="modal-body">
+                    <h2>Und was ist mit Corona?</h2>
+                    <p class="content-text"> Wir haben lange gewartet und mit vielen Experten gesprochen, um zu prüfen
+                        ob und wie wir eine schöne und sichere Hochzeit feiern können. <br>
+                        <br>
+                        Klar ist, wir werden flexibel bleiben müssen. Und so verstehen wir natürlich auch eure Zusage.
+                        <br>
+                        <br>
+
+                        Doch Ende Juli werden hoffentlich viele von uns geimpft sein.
+                        Sollte es nötig sein, so bieten wir für alle Gäste vor der standesamtlichen Trauung Schnelltests
+                        an, die von geschultem Personal durchgeführt werden.
+                        Zusätzlich erlaubt die Lokalität der Hochzeitsfeier eine Feier drinnen und draußen und lässt
+                        sich sehr gut belüften. <br>
+                        <br>
+                        Deshalb glauben wir „ja, das geht!“. <br>
+                        <br>
+                        Sollte sich an den Rahmenumständen etwas ändern, so melden wir uns natürlich kurzfristig bei
+                        euch. <br>
+                        <br>
+
+                        Für Fragen stehen wir und unsere Trauzeugen euch gern zur Verfügung.
+                    </p>
+                    <h2>Liederwünsche</h2>
+                    <p class="content-text">Unser DJ freut sich am Tag der Hochzeit eure Liederwünsche entgegenzunehmen.
+                        Wenn ihr ausgefallene Wünsche habt, dann schickt die doch gern vorab als Teil der RSVP.</p>
+                    <h2>Spiele</h2>
+                    <p class="content-text">Solltet ihr Ideen oder Wünsche für Spiele haben, dann meldet euch zur
+                        Abstimmung gern bei unseren
+                        Trauzeugen.</p>
+                    <h2>Soll ich wirklich Badesachen einpacken?</h2>
+                    <p class="content-text">Wer lange tanzt, der muss sich abkühlen und wir feiern direkt am Wasser.
+                        Handtücher stellen wir. Die Entscheidung liegt bei euch.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="modal_close" data-dismiss="modal">Schließen</button>
@@ -273,34 +605,61 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="faq_modal" tabindex="-1" role="dialog" aria-labelledby="faq_modal">
+    <div class="modal fade" id="rsve_modal" tabindex="-1" role="dialog" aria-labelledby="rsve_modal">
         <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">FAQ</h5>
+                    <h1>FAQ</h1>
                 </div>
                 <div class="modal-body">
-                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
-                        of them accusamus labore sustainable VHS.</p>
-                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
-                        of them accusamus labore sustainable VHS.</p>
-                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
-                        of them accusamus labore sustainable VHS.</p>
+                    <div class="form-section">
+                        <div class="form-container">
+
+                            <form action="" method="get" enctype="text/plain">
+                                <div class="form-group">
+                                    <label for="firstName">Vorname</label>
+                                    <input type="text" name="firstName" id="firstName">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Nachname</label>
+                                    <input type="text" name="lastName" id="lastName">
+                                </div>
+                                <div class="form-group">
+                                    <label for="firstName">Vorname +1</label>
+                                    <input type="text" name="firstNamePlus" id="firstNamePlus">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Nachname +1</label>
+                                    <input type="text" name="lastNamePlus" id="lastNamePlus">
+                                </div>
+                                <div class="form-group">
+                                    <label for="yes">Ich freue mich darauf, den Tag mit euch zu feiern!</label>
+                                    <input type="checkbox" name="yes" id="yes">
+                                </div>
+                                <div class="form-group">
+                                    <label for="no">Ich kann leider nicht teilnehmen</label>
+                                    <input type="checkbox" name="no" id="no">
+                                </div>
+                                <div class="form-group">
+                                    <label for="vegetarian">Vegetarisch</label>
+                                    <input type="checkbox" name="vegetarian" id="vegetarian">
+                                </div>
+                                <div class="form-group">
+                                    <label for="vegan">Vegan</label>
+                                    <input type="checkbox" name="vegan" id="vegan">
+                                </div>
+                                <div class="form-group">
+                                    <label for="allergies">Allergien</label>
+                                    <input type="text" name="allergies" id="allergies">
+                                </div>
+                                <div class="form-group">
+                                    <label for="song">Mein besonderer Liedwunsch</label>
+                                    <input type="text" name="song" id="song">
+                                </div>
+                                <button type="Submit">Absenden</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="modal_close" data-dismiss="modal">Schließen</button>
