@@ -614,51 +614,57 @@
                 <div class="modal-body">
                     <div class="form-section">
                         <div class="form-container">
-
-                            <form action="https://formspree.io/f/xnqlpokp" method="POST" enctype="text/plain">
+                            <form action="https://submit-form.com/ZzMCKsKo" method="POST">
+                                <input type="hidden" name="_append" value="false" />
+                                <input type="hidden" name="_redirect"
+                                    value="http://www.wirmiteuchimjuli.de/thanks.html" />
+                                <input type="hidden" name="_error" value="http://www.wirmiteuchimjuli.de//error.html" />
                                 <div class="form-group">
                                     <label for="firstName">Vorname</label>
-                                    <input type="text" name="firstName" id="firstName">
+                                    <input type="text" name="Vorname" id="firstName" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="lastName">Nachname</label>
-                                    <input type="text" name="lastName" id="lastName">
+                                    <input type="text" name="Nachname" id="lastName" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="firstName">Vorname +1</label>
-                                    <input type="text" name="firstNamePlus" id="firstNamePlus">
+                                    <input type="text" name="VornamePlusEins" id="firstNamePlus">
                                 </div>
                                 <div class="form-group">
                                     <label for="lastName">Nachname +1</label>
-                                    <input type="text" name="lastNamePlus" id="lastNamePlus">
+                                    <input type="text" name="NachnamePlusEins" id="lastNamePlus">
                                 </div>
                                 <div class="form-group">
                                     <label for="yes">Ich freue mich darauf, den Tag mit euch zu feiern!</label>
-                                    <input type="checkbox" name="confirmation" id="yes">
+                                    <input type="radio" value="Zugesagt" name="Teilnahme" id="Zugesagt" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="no">Ich kann leider nicht teilnehmen</label>
-                                    <input type="checkbox" name="cancellation" id="no">
+                                    <input type="radio" value="Abgesagt" name="Teilnahme" id="Abgesagt">
                                 </div>
                                 <div class="form-group">
                                     <label for="vegetarian">Vegetarisch</label>
-                                    <input type="checkbox" name="vegetarian" id="vegetarian">
+                                    <input type="checkbox" value="Ja" name="Vegetarisch" id="vegetarian"
+                                        value="vegetarisch">
                                 </div>
                                 <div class="form-group">
                                     <label for="vegan">Vegan</label>
-                                    <input type="checkbox" name="vegan" id="vegan">
+                                    <input type="checkbox" name="Vegan" id="vegan" value="Ja">
                                 </div>
                                 <div class="form-group">
                                     <label for="allergies">Allergien</label>
-                                    <input type="text" name="allergies" id="allergies">
+                                    <input type="text" name="Allergien" id="allergies">
                                 </div>
                                 <div class="form-group">
                                     <label for="song">Mein besonderer Liedwunsch</label>
-                                    <input type="text" name="song" id="song">
+                                    <input type="text" name="Liedwunsch" id="song">
                                 </div>
                                 <button type="Submit">Absenden</button>
+
                             </form>
                         </div>
+                        <div id="status"></div>
                     </div>
                 </div>
                 <div class="modal-footer">

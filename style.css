@@ -28,6 +28,7 @@ h3 {
 
 a {
     color: black;
+    text-decoration: none;
 }
 
 header {
@@ -121,9 +122,14 @@ main, img {
 
 .modal_close {
     background: none;
-    border: none;
+    border:none;
+    border-bottom: 1px solid transparent;
     text-align:center;
     font-family:Arial, Helvetica, sans-serif;
+    transition: 0.6s;
+}
+.modal_close:hover {
+    border-color:black;
 }
 .modal-body{
     margin:0 5em 1em 5em;
@@ -157,6 +163,53 @@ main, img {
     font-size: 18px
     border: 1px solid rgba(128,128,128,0.199)
     margin-top: 5px;
+}
+
+
+.form_response_outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .form_response_middle {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .form_response_inner_success {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background: lightgreen;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align:center;
+  }
+  .form_response_inner_error {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background: lightcoral;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align:center;
+  }
+
+.form_response_outer h1{
+    margin: 2em 1em 1em 1em;
+    font-weight: 300;
+}
+.form_response_outer p{
+    margin: 1em 1em 1em 1em;
+    padding: 1em 1em 1em 1em;
+}
+.form_response_outer a:hover{
+    font-weight: 500;
+    color:black;
 }
 
 button[type="submit"]{
