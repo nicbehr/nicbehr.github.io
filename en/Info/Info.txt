@@ -1,0 +1,11 @@
+Email: 		wir@wirmiteuchimjuli.de
+PW:		bLNiMG4C3xSWNkv
+Ionos Log: 	Nb0911/1992
+
+
+---------------------------------------------------------------------------------
+Thunderbird Mail Config:
+
+ 		Typ 	Server-Adresse 	Port 	SSL 		Authentifizerung
+Posteingang 	IMAP 	imap.ionos.de 	993 	SSL/TLS 	Passwort,normal
+Postausgang 	SMTP 	smtp.ionos.de 	465 	SSL/TLS 	Passwort,normal

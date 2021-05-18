@@ -1,46 +1,251 @@
-@import url(//db.onlinewebfonts.com/c/6bccacc0af0302222227e090e8a03f3f?family=Scriptina);
-@font-face {font-family: "Scriptina"; src: url("//db.onlinewebfonts.com/t/6bccacc0af0302222227e090e8a03f3f.eot"); src: url("//db.onlinewebfonts.com/t/6bccacc0af0302222227e090e8a03f3f.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6bccacc0af0302222227e090e8a03f3f.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6bccacc0af0302222227e090e8a03f3f.woff") format("woff"), url("//db.onlinewebfonts.com/t/6bccacc0af0302222227e090e8a03f3f.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6bccacc0af0302222227e090e8a03f3f.svg#Scriptina") format("svg"); } 
-
 * {
     margin:0;
     padding:0;
     outline:0;
     font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+/*     vertical-align: baseline;
+    background: transparent; */
+}
+
+h1{
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+h2 {
+    font-size: 1.5em;
+    margin: 1.5em 1em 1em 0em;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+h3 {
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    margin: 1em 0em 1em 0em;
+    font-weight: 300;
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
 
 header {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    height: 100px;
     margin-top:0;
-    position:relative;
-    height:100px;
-    text-align:center;
-    font-family:Arial Narrow, Arial, sans-serif;
     background-image: url(images/header_background_x.jpg);
     background-size:cover;
     background-repeat: no-repeat;
 }
 
-nav, a{
-    font-family:Arial Narrow, Arial, sans-serif;
+header p{
+    align-self: center;
+}
+
+.nav-base{
+    display:flex;
+    flex:1;
+    border-top: 0.5px solid black;
+    font-size: 14px;
+}
+
+.nav-container {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+ nav .btn-nav{
+    text-align:center;
+    border: none;
+    background:none;
+    display: inline;
     color:Black;
-    text-align: center;
-    text-decoration: none;
-    word-spacing:20px;
+    padding: 1em 1em 0;
     letter-spacing:2px;
+    transition: 0.6s;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+#language {
+    border: none;
+    background:none;
+    padding: 1em 1em 0;
+    display: inline;
+}
+
+#language > a{
+    color:Black;
+    letter-spacing:2px;
+    transition: 0.6s;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.content-text {
+    font-size:1em;
+    letter-spacing: 0.7px;
+}
+
+nav .btn-nav:hover, #language > a:hover{
+    border-color: black;
 }
 
 main, img {
-    text-align: center;
+    margin:auto;
     max-height:100%;
-    padding-top:0%;
     width:85%;
 }
 
-#countdown{
-    
-    font-family:Scriptina;
-    letter-spacing:2px;
-    padding-top:3%;
-    padding-right:30%;
+.welcome-text{
+    font-family: 'Roboto', sans-serif;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 10%;
 }
+
+
+
+.modal-header{
+    justify-content: center;
+}
+
+.modal-footer{
+    justify-content: center;
+}
+
+.modal_close {
+    background: none;
+    border:none;
+    border-bottom: 1px solid transparent;
+    text-align:center;
+    font-family:Arial, Helvetica, sans-serif;
+    transition: 0.6s;
+}
+.modal_close:hover {
+    border-color:black;
+}
+.modal-body{
+    margin:0 5em 1em 5em;
+}
+
+
+.form-section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-group input{
+    width: 100%;
+    padding: 5px;
+    font-size: 18px
+    border: 1px solid rgba(128,128,128,0.199)
+    margin-top: 5px;
+}
+
+
+.form_response_outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .form_response_middle {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .form_response_inner_success {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background: lightgreen;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align:center;
+  }
+  .form_response_inner_error {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background: lightcoral;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align:center;
+  }
+
+.form_response_outer h1{
+    margin: 2em 1em 1em 1em;
+    font-weight: 300;
+}
+.form_response_outer p{
+    margin: 1em 1em 1em 1em;
+    padding: 1em 1em 1em 1em;
+}
+.form_response_outer a:hover{
+    font-weight: 500;
+    color:black;
+}
+
+button[type="submit"]{
+    width:100%;
+    border:none;
+    outline:none;
+    padding: 20px;
+    font-size:24;
+    border-radius: 8px;
+    text-aign: center;
+    cursor: pointer;
+    margin-top: 10px
+}
+
+#timetable td{
+    padding: 1em 1em;
+    vertical-align: top;
+}
+#timetable td > p{
+       font-weight: 300;
+}
+
+#acc-list > li{
+    margin: 0 0 2em 0;
+}
+
+#countdown{
+    letter-spacing:2px;
+    font-size: 0.7em;
+}
+
+
+
+
+@media (max-width: 990px) {  
+    .btn-nav {  
+      flex-basis: 100%;  
+    }  
+  }
