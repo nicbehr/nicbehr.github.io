@@ -110,7 +110,11 @@ main, img {
     margin-bottom: 10%;
 }
 
-
+.close{
+    border:none;
+    background:none;
+    float:right;
+}
 
 .modal-header{
     justify-content: center;
@@ -132,7 +136,7 @@ main, img {
     border-color:black;
 }
 .modal-body{
-    margin:0 5em 1em 5em;
+    margin:0 3em 1em 3em;
 }
 
 
@@ -225,7 +229,7 @@ button[type="submit"]{
 }
 
 #timetable td{
-    padding: 1em 1em;
+    padding: 1em 0.5em;
     vertical-align: top;
 }
 #timetable td > p{
