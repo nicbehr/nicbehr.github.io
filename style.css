@@ -47,7 +47,6 @@ header p{
 }
 
 
-
 .nav-base{
     display:flex;
     flex:1;
@@ -78,8 +77,7 @@ header p{
 #language {
     border: none;
     background:none;
-    padding: 1em 1em 0;
-    display: inline;
+    padding: 1em 0em 0;
 }
 
 #language > a{
