@@ -112,10 +112,20 @@ main, img {
     margin-bottom: 10%;
 }
 
-.close{
+.modal-close{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.modal-close .close{
     border:none;
     background:none;
     float:right;
+    font-size: 2em;
+    font-weight: 500;
+}
+.modal-close .close:hover{
+    font-size: 2.3em;
 }
 
 .modal-header{
@@ -141,9 +151,7 @@ main, img {
     margin:0 3em 1em 3em;
 }
 
-
 .form-section{
-    height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -158,9 +166,9 @@ main, img {
     margin-bottom: 20px;
 }
 
-.form-group{
+.form-container{
     width: 100%;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .form-group input[type="text"], input[type="email"]{
