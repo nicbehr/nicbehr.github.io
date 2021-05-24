@@ -284,6 +284,9 @@ button[type="submit"]:hover{
         border-bottom: 0.3px solid black;
     }
   }
+  main img{
+      padding-top: 3em;
+  }
 
   @media (max-width: 445px) {  
     .modal-body{
