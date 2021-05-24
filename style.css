@@ -275,6 +275,12 @@ button[type="submit"]:hover{
 
 
 
+@media (max-width: 1400px){
+    main img{
+        position:fixed;
+        bottom:0px;
+      }
+  }
 
 @media (max-width: 991px) {  
     .btn-nav {  
@@ -283,9 +289,6 @@ button[type="submit"]:hover{
     .timetable-header h3{
         border-bottom: 0.3px solid black;
     }
-  }
-  main img{
-      padding-top: 3em;
   }
 
   @media (max-width: 445px) {  
