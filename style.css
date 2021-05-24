@@ -275,7 +275,7 @@ button[type="submit"]:hover{
 
 
 
-@media (max-width: 1400px){
+@media (max-width: 1120px){
     main img{
         position:fixed;
         bottom:0px;
