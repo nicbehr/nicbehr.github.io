@@ -29,6 +29,7 @@ h3 {
 a {
     color: black;
     text-decoration: underline;
+    text-decoration-thickness: 0.01em;
 }
 
 ul, li{
