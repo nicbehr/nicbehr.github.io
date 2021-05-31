@@ -48,6 +48,8 @@ header {
     background-image: url(images/header_background_x.jpg);
     background-size:cover;
     background-repeat: no-repeat;
+    z-index: 9998;
+    position: relative;
 }
 
 header p{
@@ -61,7 +63,7 @@ header p{
     flex:1;
     border-top: 0.5px solid black;
     font-size: 14px;
-    z-index: 9999;
+    z-index: 9998;
     position: relative;
 }
 
@@ -159,6 +161,10 @@ main, img {
 }
 .modal-body{
     margin:0 3em 1em 3em;
+}
+
+.modal {
+    z-index: 9999;
 }
 
 .form-section{
