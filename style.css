@@ -300,7 +300,7 @@ button[type="submit"]:hover{
     .btn-nav {  
       flex-basis: 100%;  
     }  
-    .timetable-header h3{
+    .timetable-header{
         border-bottom: 0.3px solid black;
     }
   }
