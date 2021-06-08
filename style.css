@@ -87,6 +87,9 @@ header p{
     border-bottom: 1px solid transparent;
 }
 
+footer {
+    margin: 1em 1em 1em 1em;
+}
 
 #language {
     border: none;
@@ -292,8 +295,12 @@ button[type="submit"]:hover{
 @media (max-width: 1120px){
     main img{
         position:fixed;
-        bottom:0px;
+        bottom:3em;
       }
+    footer {
+        position: fixed;
+        bottom: 0px;
+    }
   }
 
 @media (max-width: 991px) {  
